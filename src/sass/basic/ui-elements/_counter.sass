@@ -1,0 +1,84 @@
+.counter
+	display: flex
+	border-radius: $counter-border-radius
+	border: 0px solid $counter-border-color
+	height: 55px
+	user-select: none
+	
+	&__item
+		height: 100%
+		width: 50px
+		position: relative
+		
+		
+		&:first-child
+			background: $gray-light
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				width: 16px
+				height: 2px
+				background-color: $counter-btn-color
+				border-radius: 5px
+				
+		&:last-child
+			background: $gray-light
+			&:before,&:after
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				width: 16px
+				height: 2px
+				background-color: $counter-btn-color
+				border-radius: 5px
+				
+			&:after
+				transform: rotate(90deg)
+				
+		&:last-child,&:first-child
+			cursor: pointer
+			
+		&:hover
+			&:before,&:after
+				background-color: $orange
+				
+		&:nth-child(2)
+			width: 55px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: $counter-fs
+			color: $counter-color
+			font-weight: bold
+			border-right: 2px solid $counter-border-color
+			border-left: 2px solid $counter-border-color
+
+.counter__m.counter 
+	height: 45px
+	.counter__item
+		width: 45px
+		&:nth-child(2)
+			width: 45px
+
+.counter__sm.counter
+	height: 30px
+	.counter__item
+		width: 30px
+		&:nth-child(2)
+			width: 30px
+		&:first-child
+			&:before 
+				width: 12px
+		&:last-child 
+			&:before,&:after
+				width: 12px 
+

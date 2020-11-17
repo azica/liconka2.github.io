@@ -1,0 +1,66 @@
+.switch
+    &__input[type=checkbox]
+        height: 0
+        width: 0
+        opacity: 0
+
+    &__label
+        cursor: pointer
+        position: relative
+        width: $switch-label-w
+        height: $switch-label-h
+        display: inline-block
+   
+    &__input:checked + &__slider:before 
+        transform: translateX(29px)
+
+    &__input:checked + &__slider 
+        background-color: $orange
+
+    &__slider 
+        position: absolute
+        cursor: pointer
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: $gray2
+        border-radius: 30px;
+        transition: .4s
+        &:before
+            position: absolute
+            content: ""
+            height: 30px
+            width: 30px
+            left: 4px
+            bottom: 3px
+            background-color: $white
+            border-radius: 50%;
+            transition: $transition
+    
+    &__slider.switch__slider-orange 
+        background: $orange
+    
+    &__slider.switch__slider-orange2
+        background: #EF3E06
+
+    &__input:checked + &__slider.switch__slider-orange
+        background: $gray2
+
+
+.delete__icon 
+    display: inline-block 
+    width: 24px
+    height: 24px
+    background: $gray-dark
+    border-radius: 50%
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    .delete
+        width: 9.6px
+        height: 9.6px
+        stroke: $white
+
+.delete__icon.delete-icon__dark
+    background: $black

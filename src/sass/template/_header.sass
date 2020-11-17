@@ -1,0 +1,100 @@
+.header 
+  background: green
+  display: block
+  position: relative
+  top: 0
+  left: 0
+  right: 0
+  width: 100%
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05)
+  z-index: 100
+  padding: 10px 0
+  a
+    border-bottom: 0
+  
+  &__inner > .row 
+   @include flex_between_center
+   
+  
+  &__logo 
+    display: inline-block
+    float: left
+    width: 62px
+    height: 58px
+  
+  &__languages 
+    margin-left: 20px
+    .languages
+      li 
+        margin: 0
+      &__link 
+        font-size: 12px
+        font-weight: 600
+        display: inline-block
+        margin-left: 5px
+        text-transform: uppercase
+        boder-color: transparent
+      &__link.active 
+          color: #7F7F7F
+
+
+  &__actions
+    @include flex_center_b
+
+  &__user 
+    svg
+      width: 24px
+      height: 24px
+      stroke: $orange
+      fill: transparent
+  
+  &__btn 
+    margin-left: 35px
+    padding: 0 26px
+  
+
+
+.menu 
+  &__list 
+    flex: 0 0 1260px
+    margin: 0 auto
+    @include flex_between_center
+    max-width: 887px
+    width: 100%
+    li
+      margin: 0
+      &:after 
+          display: none
+  
+  &__toggle
+    border: 1px solid #CACACA 
+    min-width: 116px
+    height: 45px
+    display: flex
+    align-items: center
+    svg 
+      width: 24px
+      height: 24px
+      fill: $orange
+      float: left
+      margin: 0 14px
+      cursor: pointer
+    span 
+      font-size: 18px
+      text-transform: capitalize
+
+
+  &__link 
+    font-size: 18px
+    font-weight: 500
+    text-transform: capitalize
+    text-decoration: none
+
+
+
+
+
+  
+  //пример медиазапроса
+  // @include bp($point-4)
+  //   padding: 0 20px

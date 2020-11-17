@@ -1,0 +1,76 @@
+extends pug/base
+
+append vars
+	- title = 'Главная'
+block content
+	.wrapper
+		.container
+			.row
+				.col
+					.breadcrumbs
+						ul.breadcrumbs__list
+							li
+								a.breadcrumbs__link Главная
+							li
+								a.breadcrumbs__link События
+							li
+								a.breadcrumbs__link Open Day. Развитие бизнеса
+		
+				.col
+					h1 Live chat support live chat implementation and best practices
+					.main__img
+					p Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. 
+					h2
+						| 	Live chat is a powerful tool, 
+						span but only
+						| 	when it’s used
+					p This feeling of trust only increases if 	 |	 you use 
+						a(href="").link live chat as part 
+						|	of a full customer 
+						a(href="").link 	support experience.
+						|  If  you’re checking in with customers via email, keeping your phone lines open and taking calls, and being present on social media, you’re showing them.
+					h3 4 best practices for a successful live chat support 4 best practices for a successful live chat support experience
+					p Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. 
+			
+			.block
+				.row
+					.col
+						.block__cart
+							a(href="").block__cart-img 
+								img(src="./images/block1/01.png" alt="")
+							h5 Фитнес
+							p Гостям «Лисьей норы» мы предлагаем посетить наш фитнес-клуб, в котором можно с максимальной пользой и удовольствием провести время. К вашим услугам – современная кардиозона, тренажёры, зал аэробики и финская сауна.
+					.col
+						.block1__cart
+							a(href="").block1__cart-img 
+								img(src="./images/block1/02.png" alt="")
+							h5 Прогулочные маршруты
+							p Красочные пешие маршруты, прокат велосипедов, зимой – специальная лыжная трасса.
+					.col
+						.block__cart
+							a(href="").block__cart-img 
+								img(src="./images/block1/03.png" alt="")
+							h5 Прокат инвентаря
+							p Велосипеды, коньки и лыжи, рыболовные снасти, снаряжения для стрельбы и прогулки на лодке – можно не только привезти с собой, но и взять на прокат на ресепшене в Лисьей норе. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi necessitatibus magnam suscipit architecto hic recusandae obcaecati dignissimos, tenetur debitis itaque.		
+					
+			.block.block2
+				.row
+					.col
+						.block__cart
+							a(href="").block__cart-img
+								img(src="./images/block1/04.png", alt="")
+							.block__content
+								h5 Рыбалка
+								p Проживающие гости и обладатели Foxcard могут круглый год наслаждаться рыбалкой.
+					.col
+						.block__cart
+							a(href="").block__cart-img
+								img(src="./images/block1/05.png", alt="")
+							.block__content
+								h5 Детские площадки
+								p «Лисья нора» это замечательное место для семейного досуга. У нас созданы максимально комфортные условия для тех, кто приезжает на отдых с детьми.
+				include pug/particles/form-example
+
+
+
+

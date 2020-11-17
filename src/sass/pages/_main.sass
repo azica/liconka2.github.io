@@ -1,0 +1,96 @@
+.breadcrumbs
+    &__list
+        display: flex
+        margin: 80px 0 20px 0
+
+    li
+        position: relative
+        padding-right: 20px
+        margin: 0px 20px 0px 0px
+        &:after
+            position: absolute
+            content: '/'
+            top: 50%
+            left: 100%
+            transform: translateY(-50%)
+            color: $gray-dark
+            font-size: 20px
+            background: transparent
+            height: 100%
+        &:last-child:after
+            display: none
+            
+
+    &__link 
+        color: $gray-dark
+        font-size: 16px
+        font-weight: 500
+
+
+.main 
+    h1 
+        margin: 0 0 88px 0
+    &__img 
+        display: block
+        @include  foil
+        background-image: url("../images/main-img.png")
+        height: 709px
+        margin-bottom: 65px
+    &__subtitle 
+        margin: 65px 0 45px
+        span 
+            color: $orange
+    p 
+        a 
+            border-bottom: 1px solid transparent
+            &:hover 
+                border-bottom: 1px solid $orange
+    h3 
+        margin: 65px 0 30px
+
+
+.block
+    .row
+        @include flex_between_center
+        align-items: start
+        .col
+            flex: 0 0 33.333%
+    &__cart
+        max-width: 400px
+    &__cart-img
+        display: block
+        width: 100%
+        max-height: 220px
+        overflow: hidden
+        img
+            width: 100%
+            object-fit: cover
+    p 
+        color: $gray-dark
+
+.block2
+    .row
+        .col
+            flex: 0 0 50%
+            .block__cart
+                max-width: 600px
+                &-img
+                    max-height: 340px
+                    margin-bottom: 38px
+            .block__content
+                display: flex
+                h5
+                    margin: 0
+                    max-width: 200px
+                p 
+                    margin-left: 10px
+           
+                
+    
+        
+.form-block
+    margin: 0 70px 0 79px
+    h5 
+        margin: 65px 0 42px 0
+
+

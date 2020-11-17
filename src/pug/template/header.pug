@@ -1,0 +1,33 @@
+header.header
+    .container-fluid
+        .header__inner
+            .row
+                a.header__logo(href='index.html')
+                    img(src="images/logo.svg", alt="logo")
+                .header__languages.languages
+                    a.languages__link.active(href='/ru') ру
+                    a.languages__link(href='/eng') eng
+                ul.menu__list
+                    .menu__toggle
+                       +svg('ic_burger')
+                       span menu
+                    li
+                        a.menu__link(href="") Размещение
+                    li
+                        a.menu__link(href="") Стрельба
+                    li
+                        a.menu__link(href="")  Развлечения
+                    li
+                        a.menu__link(href="") Мероприятия
+                    li
+                        a.menu__link(href="") Контакты
+                    li
+                .header__actions
+                    a.header__user(href="")
+                        +svg('ic_user')
+                    a.header__btn.btn.btn--blue.btn-small забронировать
+            
+              
+            
+       
+        

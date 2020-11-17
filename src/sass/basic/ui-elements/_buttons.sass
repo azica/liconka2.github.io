@@ -1,0 +1,100 @@
+.btn
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	font-family: $baseFont
+	color: $white
+	font-size: $btn-fs
+	font-weight: 600
+	text-transform: capitalize;
+	text-align: center
+	white-space: nowrap
+	transition: 0.5s ease
+	cursor: pointer
+	border-bottom: none
+	border-radius: $btn-border-radius
+	
+	&[disabled],
+	&.disabled
+		opacity: .5
+		pointer-events: none
+
+	+bp($point-2)
+		border-radius: $btn-group-bor-radius-xs
+	
+	&--blue
+		background-color: $btn-blue
+		
+		&:hover
+			color: $white
+			background-image: $btn-blue-hover
+			
+	&--red
+		background-color: $btn-red
+		
+		&:hover
+			color: $white
+			background-color: $btn-red-hover
+			
+	&--flat
+		color: $btn-flat-color
+		border: 1px solid $btn-flat-bor
+		padding: 0 26px
+		height: $btn-h-large
+		
+		&:hover
+			color: $btn-flat-color
+			border: 1px solid $btn-flat-bor-hover
+
+		+bp($point-2)
+			height: $btn-h
+			padding: 0 30px
+	&-large 
+		height: $btn-h-large
+		padding: 0 70px
+	&-small 
+		height: $btn-h
+		padding: 0 55px
+		
+.btn--icon 
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	position: relative 
+	background: $gray2
+	padding: 0 55px 0 70px
+	height: 55px
+	border: 2px solid transparent
+	span 
+		text-transform: lowercase
+		position: relative
+		padding-right: 20px
+		color: $black
+		&:after
+			position: absolute
+			content: ''
+			top: 50%
+			transform: translateY(-50%)
+			right: 0
+			width: 12px
+			height: 12px
+			background: url(../images/arrow.svg) 50% no-repeat
+			fill: #2e2e2e
+			border: unset
+			transition: .3s linear
+
+	&__guest
+		width: 24px
+		height: 24px
+		fill: $orange
+		stroke: $orange
+		margin-right: 5px
+	&:hover
+		background: $white
+		border: 2px solid $gray2
+	
+.btn--icon.btn-small
+	padding: 0 40px
+
+.btn--flat.btn-small
+	padding: 0 20px
