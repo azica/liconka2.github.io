@@ -387,12 +387,18 @@ block content
 						span Правила безопасности
 			
 			.row
-				p.link-text
-					| 	Ознакомлен с политикой и выражаю согласие на 
-					a(href='').link  Обработку 
-					|	 моих персональных данных. Ознакомлен с 
-					a(href='').link Правилами 
-					| 	бронирования
+				label.form-checkbox
+				input.form-checkbox__input.js-agree(type='checkbox')
+				span.form-checkbox__checkmark
+				a.form-checkbox__text.link__text(href="#" target="_blank")
+					p Ознакомлен с политикой и выражаю согласие на 
+						span Обработку 
+						|	 моих персональных данных.
+					p Ознакомлен с 
+						span Правилами 
+						| 	бронирования и
+						span Правилами
+						| нахождении на территории 
 			.row
 				.col
 					a(href="").link-email reception@foxlodge.ru

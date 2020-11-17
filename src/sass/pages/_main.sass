@@ -1,7 +1,7 @@
 .breadcrumbs
     &__list
         display: flex
-        margin: 80px 0 20px 0
+        margin: 0 0 20px 0
 
     li
         position: relative
@@ -28,16 +28,13 @@
 
 
 .main 
-    h1 
-        margin: 0 0 88px 0
     &__img 
         display: block
         @include  foil
         background-image: url("../images/main-img.png")
         height: 709px
         margin-bottom: 65px
-    &__subtitle 
-        margin: 65px 0 45px
+    h2
         span 
             color: $orange
     p 
@@ -45,11 +42,11 @@
             border-bottom: 1px solid transparent
             &:hover 
                 border-bottom: 1px solid $orange
-    h3 
-        margin: 65px 0 30px
+
 
 
 .block
+    margin-top: 82px
     .row
         @include flex_between_center
         align-items: start
@@ -57,16 +54,14 @@
             flex: 0 0 33.333%
     &__cart
         max-width: 400px
-    &__cart-img
-        display: block
-        width: 100%
-        max-height: 220px
-        overflow: hidden
         img
+            display: block
             width: 100%
+            max-height: 220px
+            overflow: hidden
             object-fit: cover
-    p 
-        color: $gray-dark
+        p 
+            color: $gray-dark
 
 .block2
     .row
@@ -78,19 +73,25 @@
                     max-height: 340px
                     margin-bottom: 38px
             .block__content
-                display: flex
+                @include flex_between_center
+                align-items: start
+                margin-top: 38px
                 h5
-                    margin: 0
-                    max-width: 200px
-                p 
-                    margin-left: 10px
+                    margin-top: 0
+                p   
+                    max-width: 400px
            
                 
-    
+.ideas
+    max-width: 1040px
+
+.links 
+    margin: 30px 0 65px
+    a 
+        margin-bottom: 20px
+
+
         
-.form-block
-    margin: 0 70px 0 79px
-    h5 
-        margin: 65px 0 42px 0
+    
 
 

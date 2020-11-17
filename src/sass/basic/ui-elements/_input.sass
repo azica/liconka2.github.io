@@ -2,7 +2,7 @@
 	position: relative
 	display: block
 	width: 100%
-	margin-bottom: 30px
+	margin-bottom: 40px
 	
 	&[disabled],
 	&.disabled
@@ -31,16 +31,17 @@
 			box-shadow: 0 4x 4px rgba(0, 0, 0, 0.25)
 
 		+bp($point-2)
-			height: $input-h 
+			min-height: $input-h 
 			line-height: $input-h
 			font-size: $input-fs-xs
 			border-radius: $input-border-radius-xs
 
 	&__textarea 
-		height: 120px 
+		min-height: 155px 
 		line-height: 1.5	
 		padding-top: 25px 
 		padding-bottom: 25px
+		overflow-x: hidden
 
 		+bp($point-2)
 			height: 90px	

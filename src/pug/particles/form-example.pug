@@ -13,14 +13,11 @@
 					span.form-field__label Ваш телефон
 					span.form-field__icon
 			.form-col
-				.form-field.form-select.form-select__sm
-					select.js-select(name='example' data-placeholder="Выбор значения" data-msg="" required)
-						option(value='') 
-						option(value='GY') Gravity
-						option(value='ME') Mechanical
-						option(value='EL') Electronic
-						option(value='EL') Electronic
-					.form-field__icon
+				label.form-field
+					input.js-input.js-input-mask.form-field__input(type='email', name="email", data-mask="konstantinipolev@yan" data-msg="" required)
+					span.form-field__label Email
+					span.form-field__icon
+				
 			.form-line
 				label.form-field.form-field-textarea
 					textarea.js-input.form-field__input.form-field__textarea(name="message" data-msg="" required)
@@ -31,10 +28,13 @@
 			label.form-checkbox
 				input.form-checkbox__input.js-agree(type='checkbox')
 				span.form-checkbox__checkmark
-				a.form-checkbox__text.link(href="#" target="_blank")
-					| 	Ознакомлен с политикой и выражаю согласие на 
-					a(href='').link  Обработку 
-					|	 моих персональных данных. Ознакомлен с 
-					a(href='').link Правилами 
-					| 	бронирования
-			button.submit.btn.btn--red.btn-small(type="submit" disabled='disabled') Отправить
+				a.form-checkbox__text.link__text(href="#" target="_blank")
+					p  Ознакомлен с политикой и выражаю согласие на 
+						span  Обработку 
+						|	 моих персональных данных.
+					p  Ознакомлен с 
+						span  Правилами 
+						| 	бронирования и
+						span  Правилами
+						|  нахождении на территории 
+			button.submit.btn.btn--blue.btn-small(type="submit" disabled='disabled') Отправить

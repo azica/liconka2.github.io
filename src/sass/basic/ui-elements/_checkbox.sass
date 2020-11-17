@@ -18,8 +18,11 @@
 		width: 0
 		height: 0
 		
-		&:checked ~ .form-checkbox__checkmark:after
-			opacity: 1
+		
+		&:checked + .form-checkbox__checkmark 
+			background: $orange
+			border-color: $orange
+		
 	
 	&__text
 		font-size: $checkbox-fs
@@ -33,17 +36,17 @@
 		border: $checkbox-bor-width solid $checkbox-bor-color
 		border-radius: $checkbox-bor-radius
 		background-color: $white
-		width: 24px
-		height: 24px
+		width: 22px
+		height: 22px
 		
 		&:after
-			background: url("../images/check.png") 50% no-repeat
-			background-size: 19px 15px
+			background: url("../images/check.svg") 50% no-repeat
+			background-size: 17px 14px
 			width: 100%
 			height: 100%
 			content: ''
-			opacity: 0
+			opacity: 1
 			transition: opacity 150ms ease-in-out
 			position: absolute
-			top: -4px
-			left: 3px
+			top: -2px
+			left: 2px

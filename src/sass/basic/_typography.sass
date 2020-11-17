@@ -1,7 +1,7 @@
 h1
 	font-size: $h1-fs
 	line-height: $h1-lh
-	margin: round($baseGutter*3) 0 round($baseGutter*1.1)
+	margin: 0 0 round($baseGutter*2.933)
 	
 	@include bp($point-3)
 		margin-top: round($baseGutter*2.1)
@@ -10,23 +10,22 @@ h1
 h2
 	font-size: $h2-fs
 	line-height: $h2-lh
-
-	margin: round($baseGutter*1.2) 0 round($baseGutter*1.2)
+	margin: round($baseGutter*1.5) 0 round($baseGutter*1.5)
 	
 h3
 	font-size: $h3-fs
 	line-height: $h3-lh
-	margin: round($baseGutter*1.5) 0 round($baseGutter*0.6)
+	margin: round($baseGutter*2.16) 0 round($baseGutter*1)
 
 h4
 	font-size: $h4-fs
 	line-height: $h4-lh
-	margin: round($baseGutter*1.5) 0 round($baseGutter*0.6)
+	margin: round($baseGutter*1.5) 0 round($baseGutter*1)
 	
 h5
 	font-size: $h5-fs
 	line-height: $h5-lh
-	margin: round($baseGutter*1.2) 0 round($baseGutter*0.6)
+	margin: round($baseGutter/1.875) 0 round($baseGutter/1.875)
 	
 h6
 	font-size: $h6-fs
@@ -45,7 +44,7 @@ h5
 p
 	font-size: $p-fs
 	line-height: $p-lh
-	margin: round($baseGutter/0.9) 0
+	margin: round($baseGutter/1.5) 0
 	
 	&+img
 		margin: round($baseGutter*0.2) 0 0
@@ -66,7 +65,7 @@ img
 	&+p,
 	&+ul,
 	&+ol
-		margin-top: round($baseGutter*1.3)
+		margin-top: round($baseGutter*1)
 	
 	&+small
 		display: block
@@ -76,7 +75,7 @@ img
 small
 	font-size: $small-fs
 	line-height: $small-lh
-	font-style: italic
+	font-weight: 600
 	
 blockquote
 	font-size: $blockquote-fs
@@ -92,11 +91,11 @@ blockquote
 		line-height: 150%
 	
 ul,ol
-	margin: $baseGutter round($baseGutter*1.2) round($baseGutter*1.24) 54px
+	margin: $baseGutter round($baseGutter/1.25) round($baseGutter*1.24) 44px
 	
 	li
 		position: relative
-		margin: round($baseGutter*0.89) 0
+		margin: round($baseGutter/1.24) 0
 		&:first-child
 			margin-top: 0
 		&:last-child 
@@ -134,22 +133,38 @@ ul
 .table-wrap
 	overflow-x: auto
 	width: 100%
-	margin: round($baseGutter*1.3) 0
+	margin: round($baseGutter*1.5) 0 round($baseGutter*2.16) 0
 	
 table
 	table-layout: fixed
-	min-width: 728px
-	width: 100%
+	min-width: 100%
+
 	th
 		height: 90px
-		max-width: 176px
-		padding: 9px
+		max-width: 380px
+		padding: 0 30px
+		border: 1px solid $gray3
+		font-size: 16px
+		font-weight: 700
+		color: $baseTxt
+		white-space: nowrap
+		span
+			display: block
+			font-size: 12px
+			line-height: 16px
+			color: $gray-dark
+			font-weight: 600
 	td
-		height: 64px
-	td,tr,th
-		border: 1px solid #ddd
-		font-size: $small-fs
-		text-align: center
+		height: 90px
+		padding-left: 30px
+	td,tr,
+		border: 1px solid $gray2
+		text-align: left
+		color: $gray-dark
+		font-size: 16px
+		font-weight: 500
+		line-height: 23px
+	
 	
 h1,
 h2,
